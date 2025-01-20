@@ -178,6 +178,24 @@ section {
     padding-right: 0px;
   }
 }
+
+@media screen and (min-width: 576px) and (max-width:740px) {
+  .banner {
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding:20px;
+    gap: 50px;
+  }
+  .banner-img > img {
+    width: 100%;
+  }
+  .banner-contant {
+    /* margin-bottom: 100px; */
+    padding-right: 0px;
+  }
+}
 /* mani section style  */
 
 /* Standard Curriculum start*/
@@ -207,17 +225,20 @@ section {
   padding: 65px 20px;
   border-radius: 18px;
   text-align: center;
-  box-shadow: 5px 0px 20px #f1f1f1;
+  /* box-shadow: 5px 0px 20px #f1f1f1; */
 }
 
 .card-1 {
   background: linear-gradient(180deg, #def5ff, #ffffff 40%), #ffffff;
+  border: 1px solid #DEF5FF;
 }
 .card-2 {
   background: linear-gradient(180deg, #fff4dc, #ffffff 40%), #ffffff;
+  border: 1px solid #FFF4DC;
 }
 .card-3 {
   background: linear-gradient(180deg, #eee1ff, #ffffff 40%), #ffffff;
+  border: 1px solid #F2E8FF;
 }
 .card-btn-1 {
   color: #64c8ff;
@@ -230,6 +251,9 @@ section {
 }
 
 @media screen and (max-width: 576px) {
+  section {
+    margin-top: 60px;
+  }
   .curriculum-containar {
     gap: 20px;
   }
@@ -239,6 +263,23 @@ section {
   }
   .curriculum-title {
     font-size: 1.6rem;
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 740px) {
+  section {
+    margin-top: 60px;
+  }
+  .curriculum-containar {
+    gap: 20px;
+  }
+  .card-containar {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0 20px;
+  }
+  .curriculum-title {
+    font-size: 2rem;
     margin-bottom: 0px;
   }
 }
