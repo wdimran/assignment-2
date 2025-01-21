@@ -31,9 +31,9 @@
 
 main {
   background-image: url(../images/bg.png);
-  /* background-repeat: no-repeat; */
+  background-repeat:repeat;
   /* background-position:center; */
-  background-size: cover;
+  /* background-size: cover; */
   margin: 0 auto;
   max-width: 1152px;
 }
@@ -283,4 +283,34 @@ section {
     margin-bottom: 0px;
   }
 }
+
+/* stories secton style start  */
+.stories{
+  display: grid;
+  grid-template-columns: repeat(1,fr);
+  text-align: center;
+  gap: 60px;
+}
+
+.stories-card-containar{
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.stories-card-right{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.stories-card{
+  border-radius: 16px;
+  background-color: #05d4df;
+}
+
+.card-ima img{
+  border-radius: 16px 16px 0 0 ;
+}
+
 /* footer section style */
