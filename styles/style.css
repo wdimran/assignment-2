@@ -158,12 +158,16 @@ section {
 
 /* Standard Curriculum start*/
 
-.curriculum{
+.curriculum {
   background: url(../images/bg.png);
 }
 .curriculum-containar {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* display: grid;
+  grid-template-columns: repeat(1, 1fr); */
   gap: 50px;
   text-align: center;
   padding: 0 140px;
@@ -225,7 +229,6 @@ section {
   background: url(../images/bg.png),
     linear-gradient(0deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
   padding: 0 140px 80px 140px;
-  padding-;
 }
 .story-card-btn {
   color: white;
@@ -290,7 +293,7 @@ section {
   margin-top: -50px;
 }
 
-.sotry-card-btn-left{
+.sotry-card-btn-left {
   position: relative;
   margin-top: -32px;
   padding-left: 20px;
@@ -310,20 +313,34 @@ section {
 }
 
 /* footer section style */
-#footer{
+#footer {
   background-color: #5d58ef;
   padding: 140px 0;
 }
 
-.footer-items-containar{
+.footer-items-containar {
   display: flex;
   gap: 20px;
-  justify-content: center;
   color: white;
   padding: 0 140px;
-
-
 }
+
+@media screen and (max-width: 576px){
+  #footer {
+    padding: 60px 0;
+  }
+
+  .footer-items-containar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+    padding: 0 20px;
+  }
+}
+
+
+
 /* banner responsive style start  */
 @media screen and (max-width: 576px) {
   .banner {
@@ -365,14 +382,17 @@ section {
 @media screen and (max-width: 576px) {
   .curriculum {
     text-align: center;
-    /* width: 1152px; */
-    margin: 80px 0px;
+    /* width: 1152px;
+    margin: 80px 0px; */
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
   section {
     margin-top: 60px;
   }
   .curriculum-containar {
     gap: 20px;
+    padding: 0;
   }
   .card-containar {
     grid-template-columns: repeat(1, 1fr);
@@ -407,15 +427,17 @@ section {
 /* story section responsive start  */
 
 @media screen and (max-width: 576px) {
+  .stories {
+    padding: 0 20px;
+    padding-bottom: 40px;
+  }
+  
   .card-left-side {
     display: none;
   }
 
   .right-card img {
     width: 100%;
-  }
-  .stories {
-    padding: 0 20px;
   }
 
   .story-card-btn {
@@ -432,7 +454,5 @@ section {
 }
 
 /* footer section start  */
-@media screen and (max-width: 576px) { 
-
+@media screen and (max-width: 576px) {
 }
-
