@@ -30,15 +30,15 @@
 /* shared style start */
 
 main {
-  background-image: url(../images/bg.png);
-  background-repeat:repeat;
-  /* background-position:center; */
-  /* background-size: cover; */
-  margin: 0 auto;
-  max-width: 1152px;
+  /* margin: 0 auto;
+  max-width: 1440px; */
 }
 
 section {
+  background-image: url(../images/bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* padding:0 80px; */
   margin-top: 80px;
 }
 
@@ -87,9 +87,9 @@ section {
 
 .title-4 {
   color: #111111;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 700;
-  line-height: 38px;
+  line-height: 28px;
 }
 
 /* all button style  */
@@ -114,8 +114,14 @@ section {
   font-weight: 500;
   line-height: 28px;
   cursor: pointer;
+  background-color: #5d58ef;
+  margin-top: -150px;
 }
 
+.card-btn {
+  position: relative;
+  margin-top: -35px;
+}
 .btn-3 {
   font-size: 1rem;
   font-weight: 700;
@@ -160,6 +166,162 @@ section {
   margin: 24px 0;
 }
 
+/* mani section style  */
+
+/* Standard Curriculum start*/
+
+.curriculum {
+  text-align: center;
+  /* width: 1152px; */
+  margin: 80px 140px;
+}
+.curriculum-containar {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 50px;
+}
+
+.card-containar {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 28px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 65px 20px;
+  border-radius: 18px;
+  text-align: center;
+  /* box-shadow: 5px 0px 20px #f1f1f1; */
+}
+
+.card-1 {
+  background: linear-gradient(180deg, #def5ff, #ffffff 40%), #ffffff;
+  border: 1px solid #def5ff;
+}
+.card-2 {
+  background: linear-gradient(180deg, #fff4dc, #ffffff 40%), #ffffff;
+  border: 1px solid #fff4dc;
+}
+.card-3 {
+  background: linear-gradient(180deg, #eee1ff, #ffffff 40%), #ffffff;
+  border: 1px solid #f2e8ff;
+}
+.card-btn-1 {
+  color: #64c8ff;
+}
+.card-btn-2 {
+  color: #f0aa00;
+}
+.card-btn-3 {
+  color: #8700ff;
+}
+
+.curriculum .arrow img {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #f0aa00;
+}
+
+.less-then {
+  margin-right: 10px;
+}
+
+/* stories secton style start  */
+.stories {
+  background: url(../images/bg.png),
+    linear-gradient(0deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
+  padding: 0 140px;
+}
+.story-card-btn {
+  color: white;
+  font-family: "Raleway", serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 28px;
+  border: none;
+  border-radius: 47.93px;
+  background: #48978b;
+  padding: 10px 18px;
+}
+.sotries-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+.card-items {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.card-left-side {
+  width: 50%;
+  border-radius: 16px;
+  background-color: white;
+}
+
+.right-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: white;
+  border-radius: 16px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.right-side-card-itms {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.story-card-image {
+  border-radius: 16px 16px 0 0;
+  width: 100%;
+}
+
+.story-card-btn-div {
+  position: relative;
+  margin-top: -50px;
+}
+
+.story-card-title {
+  padding: 0 30px;
+}
+@media screen and (max-width: 576px) {
+  .card-left-side {
+    display: none;
+  }
+
+  .right-card img {
+    width: 100%;
+  }
+  .stories {
+    padding: 0 20px;
+  }
+
+  .story-card-btn {
+    font-size: 0.5rem;
+    border-radius: 30px;
+    padding: 5px 12px;
+  }
+  .title-4 {
+    color: #111111;
+    font-size: .8rem;
+    font-weight: 700;
+    line-height: normal;
+  }
+}
+
+/* footer section style */
+
 /* banner responsive style start  */
 @media screen and (max-width: 576px) {
   .banner {
@@ -179,78 +341,31 @@ section {
   }
 }
 
-@media screen and (min-width: 576px) and (max-width:740px) {
+@media screen and (min-width: 576px) and (max-width: 740px) {
   .banner {
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding:20px;
+    padding: 20px;
     gap: 50px;
   }
   .banner-img > img {
     width: 100%;
   }
   .banner-contant {
-    /* margin-bottom: 100px; */
     padding-right: 0px;
   }
 }
-/* mani section style  */
 
 /* Standard Curriculum start*/
 
-.curriculum {
-  text-align: center;
-}
-.curriculum-containar {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 50px;
-}
-
-.card-containar {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  align-items: center;
-  gap: 28px;
-  /* margin: 0 auto; */
-  /* width: 1152px; */
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding: 65px 20px;
-  border-radius: 18px;
-  text-align: center;
-  /* box-shadow: 5px 0px 20px #f1f1f1; */
-}
-
-.card-1 {
-  background: linear-gradient(180deg, #def5ff, #ffffff 40%), #ffffff;
-  border: 1px solid #DEF5FF;
-}
-.card-2 {
-  background: linear-gradient(180deg, #fff4dc, #ffffff 40%), #ffffff;
-  border: 1px solid #FFF4DC;
-}
-.card-3 {
-  background: linear-gradient(180deg, #eee1ff, #ffffff 40%), #ffffff;
-  border: 1px solid #F2E8FF;
-}
-.card-btn-1 {
-  color: #64c8ff;
-}
-.card-btn-2 {
-  color: #f0aa00;
-}
-.card-btn-3 {
-  color: #8700ff;
-}
-
 @media screen and (max-width: 576px) {
+  .curriculum {
+    text-align: center;
+    /* width: 1152px; */
+    margin: 80px 0px;
+  }
   section {
     margin-top: 60px;
   }
@@ -265,8 +380,11 @@ section {
     font-size: 1.6rem;
     margin-bottom: 0px;
   }
-}
 
+  .curriculum .arrow {
+    display: none;
+  }
+}
 @media screen and (min-width: 576px) and (max-width: 740px) {
   section {
     margin-top: 60px;
@@ -284,33 +402,17 @@ section {
   }
 }
 
-/* stories secton style start  */
-.stories{
-  display: grid;
-  grid-template-columns: repeat(1,fr);
-  text-align: center;
-  gap: 60px;
-}
+@media screen and (max-width: 576px) {
+  .footer-items-containar {
+    display: flex;
+    flex-direction: column;
 
-.stories-card-containar{
-  display: grid;
-  gap: 30px;
-  grid-template-columns: repeat(2, 1fr);
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center; */
+    gap: 100px;
+    margin: 0 auto;
+    max-width: 1152px;
+    color: #ffffff;
+  }
 }
-
-.stories-card-right{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-}
-
-.stories-card{
-  border-radius: 16px;
-  background-color: #05d4df;
-}
-
-.card-ima img{
-  border-radius: 16px 16px 0 0 ;
-}
-
-/* footer section style */
