@@ -219,6 +219,9 @@ section {
   }
 }
 
+.mobile-marquee {
+  display: none;
+}
 .marquee {
   display: flex;
   align-items: center;
@@ -261,8 +264,6 @@ section {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  /* display: grid;
-  grid-template-columns: repeat(1, 1fr); */
   gap: 50px;
   text-align: center;
   padding: 0 140px;
@@ -490,7 +491,7 @@ section {
   .hr-line {
     margin-bottom: 20px;
     display: block;
-     }
+  }
   .containar {
     width: 100%;
     justify-content: space-between;
@@ -520,7 +521,6 @@ section {
     width: 100%;
   }
   .banner-contant {
-    /* margin-bottom: 100px; */
     padding-right: 0px;
   }
 }
@@ -543,10 +543,21 @@ section {
 }
 /* marque text style start  */
 @media screen and (max-width: 576px) {
+  .mobile-marquee {
+    display: block;
+    width: 100%;
+    border-radius: 0;
+    padding: 10px 0;
+  }
+
+.dextop-marquee{
+  display: none;
+}
   .marquee {
     width: 100%;
     border-radius: 0;
     padding: 10px 0;
+    margin-top: 0px;
   }
 }
 /* Standard Curriculum start*/
