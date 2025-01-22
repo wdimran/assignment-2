@@ -318,14 +318,40 @@ section {
   padding: 140px 0;
 }
 
+.left-items,
+.canter-items,
+.right-items {
+  max-width: 384px;
+}
+
 .footer-items-containar {
-  display: flex;
-  gap: 20px;
+  gap: 50px;
   color: white;
   padding: 0 140px;
 }
 
-@media screen and (max-width: 576px){
+.left-logo-title {
+  gap: 10px;
+  /* padding: 0 20px; */
+  margin-bottom: 20px;
+  align-items: last baseline;
+}
+
+.footer-left-descriptio {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: justify;
+}
+
+.left-logo-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 35px;
+}
+
+@media screen and (max-width: 576px) {
   #footer {
     padding: 60px 0;
   }
@@ -338,8 +364,6 @@ section {
     padding: 0 20px;
   }
 }
-
-
 
 /* banner responsive style start  */
 @media screen and (max-width: 576px) {
@@ -431,7 +455,7 @@ section {
     padding: 0 20px;
     padding-bottom: 40px;
   }
-  
+
   .card-left-side {
     display: none;
   }
