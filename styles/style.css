@@ -145,6 +145,7 @@ section {
   border-radius: 12px;
   border: none;
   background-color: #fea301;
+  cursor: pointer;
 }
 .containar {
   /* background-color: #111111; */
@@ -153,7 +154,19 @@ section {
   padding: 20px 0;
   margin: 0 auto;
 }
-.kbps{
+.home {
+  color: #fea301;
+}
+.about {
+  color: #01acfd;
+}
+.facilities {
+  color: #05d4df;
+}
+.admission {
+  color: #5d58ef;
+}
+.kbps {
   font-size: 2rem;
 }
 .hambergur-icon,
@@ -471,14 +484,13 @@ section {
   .hambergur-icon img {
     width: 30px;
   }
-  
-  .logo-title{
+  .logo-title {
     margin-left: 20px;
   }
   .hr-line {
-    display: block;
     margin-bottom: 20px;
-  }
+    display: block;
+     }
   .containar {
     width: 100%;
     justify-content: space-between;
