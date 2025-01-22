@@ -375,6 +375,13 @@ section {
   text-decoration: none;
 }
 
+.footer-social-icon{
+  margin-top: 20px;
+}
+.footer-social-icon img{
+  margin-right: 10px;
+}
+
 @media screen and (max-width: 576px) {
   #footer {
     padding: 60px 0;
@@ -397,6 +404,14 @@ section {
     gap: 20px;
     color: white;
     padding: 0 20px;
+  }
+
+  .footer-social-icon img{
+    margin-right: 5px;
+  }
+
+  .footer-social-icon{
+    margin-top: 10px;
   }
 }
 
